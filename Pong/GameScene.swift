@@ -20,7 +20,7 @@ class GameScene: SKScene {
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
         main = self.childNode(withName: "main") as! SKSpriteNode
   
-        ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+        ball.physicsBody?.applyImpulse(CGVector(dx: 15, dy: 15))
         
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         border.friction = 0
