@@ -15,15 +15,25 @@ class GameScene: SKScene {
     var enemy = SKSpriteNode()
     var main = SKSpriteNode()
     
+    var topLabel  = SKLabelNode()
+    var btmLabel = SKLabelNode()
+    
     var score = [Int]()
     
     override func didMove(to view: SKView) {
         startGame()
+        
+        topLabel = self.childNode(withName: "topLabel") as! SKLabelNode
+        btmLabel = self.childNode(withName: "btmLabel") as! SKLabelNode
+        
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
+        enemy.position.y = (self.frame.height / 2) - 50
+        
         main = self.childNode(withName: "main") as! SKSpriteNode
+        main.position.y = (-self.frame.height / 2) + 50
   
-        ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+        ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
         
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         border.friction = 0
@@ -34,6 +44,8 @@ class GameScene: SKScene {
     
     func startGame() {
         score = [0, 0]
+        topLabel.text = "\(score[1])"
+        btmLabel.text = "\(score[0])"
         
     }
     func addScore(playerWhoWon: SKSpriteNode) {
@@ -41,11 +53,13 @@ class GameScene: SKScene {
         ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
         if (playerWhoWon == main) {
             score[0] += 1
-            ball.physicsBody?.applyImpulse(CGVector(dx: 15, dy: 15))
+            ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
         } else if (playerWhoWon == enemy) {
             score[1] += 1
-            ball.physicsBody?.applyImpulse(CGVector(dx: -15, dy: -15))
+            ball.physicsBody?.applyImpulse(CGVector(dx: -10, dy: -10))
         }
+        topLabel.text = "\(score[1])"
+        btmLabel.text = "\(score[0])"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -68,9 +82,9 @@ class GameScene: SKScene {
         // Called before each frame is rendered
         enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1))
  
-        if (ball.position.y  <= main.position.y - 70) {
+        if (ball.position.y  <= main.position.y - 35) {
             addScore(playerWhoWon: enemy)
-        } else if (ball.position.y >= enemy.position.y + 70) {
+        } else if (ball.position.y >= enemy.position.y + 35) {
             addScore(playerWhoWon: main)
         }
     

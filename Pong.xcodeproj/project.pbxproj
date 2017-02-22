@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52047881E5D532800A9DCBF /* Sketch 3D.otf in Resources */ = {isa = PBXBuildFile; fileRef = F52047871E5D532800A9DCBF /* Sketch 3D.otf */; };
+		F520478A1E5D591B00A9DCBF /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52047891E5D591B00A9DCBF /* MenuVC.swift */; };
 		F5E694DF1E5AFB6000BE06C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E694DE1E5AFB6000BE06C5 /* AppDelegate.swift */; };
 		F5E694E11E5AFB6000BE06C5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F5E694E01E5AFB6000BE06C5 /* GameScene.sks */; };
 		F5E694E31E5AFB6000BE06C5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F5E694E21E5AFB6000BE06C5 /* Actions.sks */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F52047871E5D532800A9DCBF /* Sketch 3D.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sketch 3D.otf"; sourceTree = "<group>"; };
+		F52047891E5D591B00A9DCBF /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		F5E694DB1E5AFB6000BE06C5 /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E694DE1E5AFB6000BE06C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5E694E01E5AFB6000BE06C5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -107,8 +111,10 @@
 				F5E694E01E5AFB6000BE06C5 /* GameScene.sks */,
 				F5E694E21E5AFB6000BE06C5 /* Actions.sks */,
 				F5E694E41E5AFB6000BE06C5 /* GameScene.swift */,
+				F52047871E5D532800A9DCBF /* Sketch 3D.otf */,
 				F5E694E61E5AFB6000BE06C5 /* GameViewController.swift */,
 				F5E694E81E5AFB6000BE06C5 /* Main.storyboard */,
+				F52047891E5D591B00A9DCBF /* MenuVC.swift */,
 				F5E694EB1E5AFB6000BE06C5 /* Assets.xcassets */,
 				F5E694ED1E5AFB6000BE06C5 /* LaunchScreen.storyboard */,
 				F5E694F01E5AFB6000BE06C5 /* Info.plist */,
@@ -242,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5E694EA1E5AFB6000BE06C5 /* Main.storyboard in Resources */,
+				F52047881E5D532800A9DCBF /* Sketch 3D.otf in Resources */,
 				F5E694E11E5AFB6000BE06C5 /* GameScene.sks in Resources */,
 				F5E694EC1E5AFB6000BE06C5 /* Assets.xcassets in Resources */,
 				F5E694EF1E5AFB6000BE06C5 /* LaunchScreen.storyboard in Resources */,
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5E694E51E5AFB6000BE06C5 /* GameScene.swift in Sources */,
+				F520478A1E5D591B00A9DCBF /* MenuVC.swift in Sources */,
 				F5E694E71E5AFB6000BE06C5 /* GameViewController.swift in Sources */,
 				F5E694DF1E5AFB6000BE06C5 /* AppDelegate.swift in Sources */,
 			);
@@ -517,6 +525,7 @@
 				F5E6950B1E5AFB6000BE06C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5E6950C1E5AFB6000BE06C5 /* Build configuration list for PBXNativeTarget "PongTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +534,7 @@
 				F5E6950E1E5AFB6000BE06C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5E6950F1E5AFB6000BE06C5 /* Build configuration list for PBXNativeTarget "PongUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +543,7 @@
 				F5E695111E5AFB6000BE06C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
