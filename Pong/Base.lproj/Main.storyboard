@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sketch 3D.otf">
+            <string>Sketch3D</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MenuVC-->
         <scene sceneID="FGA-tu-ldi">
@@ -21,46 +26,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-05-4LQ">
-                                <rect key="frame" x="160" y="114" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="2 Player"/>
-                                <connections>
-                                    <action selector="Player2:" destination="pCk-6P-Rei" eventType="touchUpInside" id="3LR-qn-doJ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZR-be-y1g">
-                                <rect key="frame" x="160" y="381" width="55" height="30"/>
+                                <rect key="frame" x="110" y="383" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Medium"/>
+                                <fontDescription key="fontDescription" name="Sketch3D" family="Sketch 3D" pointSize="36"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleColor" red="0.98003794746834083" green="1" blue="0.99906707913247061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Medium:" destination="pCk-6P-Rei" eventType="touchUpInside" id="9P5-S3-T2q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGB-5y-lbe">
-                                <rect key="frame" x="170" y="450" width="34" height="30"/>
+                                <rect key="frame" x="140" y="451" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hard"/>
+                                <fontDescription key="fontDescription" name="Sketch3D" family="Sketch 3D" pointSize="36"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" red="0.98003794749999995" green="1" blue="0.99906707910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Hard:" destination="pCk-6P-Rei" eventType="touchUpInside" id="tiB-a5-Mri"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XW-8a-LG6">
-                                <rect key="frame" x="171" y="306" width="33" height="30"/>
+                                <rect key="frame" x="125" y="300" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Easy"/>
+                                <fontDescription key="fontDescription" name="Sketch3D" family="Sketch 3D" pointSize="36"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" red="0.97876171447418425" green="0.98070382641330622" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Easy:" destination="pCk-6P-Rei" eventType="touchUpInside" id="fwY-yh-YwY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-05-4LQ">
+                                <rect key="frame" x="80" y="36" width="215" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Sketch3D" family="Sketch 3D" pointSize="36"/>
+                                <state key="normal" title="2 Player">
+                                    <color key="titleColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="Player2:" destination="pCk-6P-Rei" eventType="touchUpInside" id="3LR-qn-doJ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.11880739822501785" green="0.044814606418845208" blue="0.32225550518134716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="dX9-z3-MLz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vcm-bx-G1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1122" y="225"/>
+            <point key="canvasLocation" x="-1122.4000000000001" y="224.4377811094453"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
