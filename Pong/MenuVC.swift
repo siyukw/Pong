@@ -35,8 +35,12 @@ class MenuVC : UIViewController {
     }
     
     func moveToGame(game : gameType) {
-        let gameVC = self.storyboard?.instantiateViewController(withIdentifier: <#T##String#>)
-    
+        let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
+        
+        currentGameType = game
+        
+        self.navigationController?.pushViewController(gameVC, animated: true)
+    }
 }
 
 
